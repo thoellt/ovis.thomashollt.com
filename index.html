@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+	  <title>Ovis ・ A Framework for Visual Analysis of Ensemble Ocean Forecasts</title>
+	  <meta charset="UTF-8">
+	  <meta name = "viewport" content = "width = device-width">
+	  
+	  <link rel="stylesheet" href="assets/style.css" media="all" type="text/css"/>
+	  <link rel="stylesheet" href="assets/jquery.bxslider.css" type="text/css" />
+	  <link rel="stylesheet" href="assets/nivo-lightbox.css" type="text/css" />
+	  <link rel="stylesheet" href="assets/default.css" type="text/css" />
+
+    <script type='text/javascript' src='assets/jquery.js'></script>
+	  <script type='text/javascript' src="assets/jquery.bxslider.min.js"></script>
+	  <script type='text/javascript' src="assets/nivo-lightbox.js"></script>
+    <script type='text/javascript' src='assets/scripts.js'></script>
+    
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-36946869-1', 'ovis.thomashollt.com');
+    ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Analytics -->
+	
+	</head>
+
+	<body>
+	
+		<div class="nav-container">
+			<div class="nav-background"></div>
+			<div class="nav-menu">
+			    <nav>
+			      <ul class="nav">
+			        <li><a href="#teaser">Hello</a><div id="nav-home"></div></li>
+			        <li><a href="#ovis">Ovis</a><div id="nav-ovis"></div></li>
+			        <li><a href="#publications">Publications</a><div id="nav-publications"></div></li>
+			        <li><a href="#get">Download</a><div id="nav-download"></div></li>
+			      </ul>
+			    </nav>
+			</div>
+		</div>
+
+		<div class="main-wrapper">
+			
+			<div class="teaser-container" id="teaser">
+				<div class="image-container" id="header-image">
+					<img src="images/system_main.png" alt="Ovis System Overview" id="system-main-img">	
+				</div>
+		
+				<!--div class="badge-container">
+					<img src="images/as_f.png" alt="Download on the Mac AppStore" class="badge">
+					<img src="images/gh_f.png" alt="Fork on the Github" class="badge">
+				</div-->
+			</div>
+			
+			<hr>
+		
+			<div class="ovis" id="ovis">
+				<div class="content-wrapper">
+					<h1>Ovis</h1>
+					<div class="section">
+						<p>
+              Ovis is a framework for interactive visual analysis of ensemble simulation ocean forecasts.
+              Ovis allows efficient and easy analysis of ocean forecasts and their parameter subspaces by recomputing derived data on the fly,
+              enabling the user to dive into the data, change parameters, select subsets of the ensemble and instantly visualize the results.
+              Ovis is implemented in Objective C and OpenGL.
+              It is a result of my PhD thesis and was developed partly during my time as a PhD student and later as a PostDoc at the
+              <a href="http://vccvisualization.org">High-Performance Visualization Group</a>,
+              part of the <a href="https://vcc.kaust.edu.sa">Visual Computing Center</a>
+              and the <a href="https://assimilation.kaust.edu.sa/">Red Sea Modeling and Prediction Group</a>
+              at the <a href="https://www.kaust.edu.sa">King Abdullah University of Science and Technology</a>.
+						</p>
+					</div>
+					<hr>
+					<div class="section">
+						<h2>Ovis in Action.</h2>
+						<ul class="bxslider">
+							<li><img class="slide-img" src="images/screen_air.png" alt="Photo"></li>
+							<li><img class="slide-img" src="images/3d.png" alt="Photo"></li>
+							<li><img class="slide-img" src="images/ts.png" alt="Photo"></li>
+							<li><img class="slide-img" src="images/screen_pro.png" alt="Photo"></li>
+							<li>
+								<video class="slide-img" autoplay loop muted controls>
+									<source src="videos/cycle.mp4"/>
+									<source src="videos/cycle.webm"/>
+									<p class="warning">Your browser does not support HTML5 video.</p>
+								</video>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+		
+			<div class="publications" id="publications">
+				<div class="content-wrapper">
+					<h1>Publications</h1>
+					</br><h2>The foundation of Ovis builds state of the art research. Please have a look at our related publications.</h2>
+ 					<div class="paper">
+ 						<div class="paper-image">
+ 							<a href="https://vimeo.com/163982565" class="lightbox" target="_blank"><img src="images/envir16_movie.jpg" alt="Visual Analysis of Reservoir Simulation Ensembles" class="paper-img"></a>
+ 						</div>
+ 						<h2>Visual Analysis of Reservoir Simulation Ensembles.</h2>
+ 						<h3>T. Höllt, F.M. de Matos Ravanelli, M. Hadwiger, and I. Hoteit.<br>
+ 							Proceedings of Workshop on Visualisation in Environmental Sciences (EnvirVis) 2016.</h3>
+ 						<div class="section" class="abstract">
+ 							<p><b>Abstract:</b>
+                In this paper we present an an adaption of the Ovis system to support the visual analysis of ensemble reservoir simulation data.
+					 The analysis of these data, while similar in kind to Ocean forecast, poses different challenges.
+					 We provide tools to inspect forecasts for multiple variables of complete fields, as well as different wells.
+					 Finally, we present a case study highlighting the effectiveness of the presented system.</p>
+ 						</div>
+ 						<div class="paper-links">
+ 							<div class="paper-link">
+ 								<a href="https://www.thomashollt.com/assets/papers/2016_envirvis/2016_envirvis.pdf" target="_blank">
+ 									<img src="images/pdf.png" alt="Paper pdf" class="paper-link-img">
+ 								</a>
+ 							</div>
+ 							<div class="paper-link">
+ 								<a href="https://www.thomashollt.com/assets/papers/2016_envirvis/2016_envirvis_slides.pdf" target="_blank">
+ 									<img src="images/slides.png" alt="Slides pdf" class="paper-link-img">
+ 								</a>
+ 							</div>
+ 							<div class="paper-link">
+ 								<a href="https://dx.doi.org/10.2312/envirvis.20161099" target="_blank">
+ 									<img src="images/ieee.png" alt="Paper at publisher" class="paper-link-img">
+ 								</a>
+              </div>
+ 						</div>
+ 						<br style="clear:left;">
+ 					</div>
+					<div class="paper">
+						<div class="paper-image">
+							<a href="https://vimeo.com/115856678" class="lightbox" target="_blank"><img src="images/nathazards_movie.jpg" alt="Visualizing Uncertainties in a Storm Surge Ensemble Data Assimilation and Forecasting System" class="paper-img"></a>
+						</div>
+						<h2>Visualizing Uncertainties in a Storm Surge Ensemble Data Assimilation and Forecasting System.</h2>
+						<h3>T. Höllt, M.U. Altaf, K.T. Mandli, M. Hadwiger, C.N. Dawson, and I. Hoteit.<br>
+							Natural Hazards 2015.</h3>
+						<div class="section" class="abstract">
+							<p><b>Abstract:</b>
+              We present a novel integrated visualization system that enables the interactive visual analysis of ensemble simulations and estimates of
+				  the sea surface height and other model variables that are used for storm surge prediction.
+				  Coastal inundation, caused by hurricanes and tropical storms, pose large risks for todays societies...</p>
+						</div>
+						<div class="paper-links">
+							<div class="paper-link">
+								<a href="https://www.thomashollt.com/assets/papers/2015_nathazards/2015_nathazards.pdf" target="_blank">
+									<img src="images/pdf.png" alt="Paper pdf" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="https://dx.doi.org/10.1007/s11069-015-1596-y" target="_blank">
+									<img src="images/ieee.png" alt="Paper at publisher" class="paper-link-img">
+								</a>
+							</div>
+						</div>
+						<br style="clear:left;">
+					</div>
+ 					<div class="paper">
+ 						<div class="paper-image">
+ 							<img src="images/envir15_movie.jpg" alt="Probability Maps for Ensemble Flow" class="paper-img">
+ 						</div>
+ 						<h2>Probability Maps for the Visualization of Assimilation Ensemble Flow Data.</h2>
+ 						<h3>T. Höllt, M. Hadwiger, O. Knio, and I. Hoteit.<br>
+ 							Proceedings of Workshop on Visualisation in Environmental Sciences (EnvirVis) 2015.</h3>
+ 						<div class="section" class="abstract">
+ 							<p><b>Abstract:</b>
+               In this work we present an approach using probability-weighted piecewise particle trajectories to allow such a mapping interactively,
+ 				  instead of tracing quadrillions of individual particles. We achieve interactive rates by binning the domain and splitting up the tracing
+ 				  process into the individual assimilation cycles, so that particles that fall into the same bin after a cycle can be treated as a
+ 				  single particle with a larger probability as input for the next time step.</p>
+ 						</div>
+ 						<div class="paper-links">
+ 							<div class="paper-link">
+ 								<a href="https://www.thomashollt.com/assets/papers/2015_envirvis/2015_envirvis.pdf" target="_blank">
+ 									<img src="images/pdf.png" alt="Paper pdf" class="paper-link-img">
+ 								</a>
+ 							</div>
+ 							<div class="paper-link">
+ 								<a href="https://www.thomashollt.com/assets/papers/2015_envirvis/2015_envirvis_slides.pdf" target="_blank">
+ 									<img src="images/slides.png" alt="Slides pdf" class="paper-link-img">
+ 								</a>
+ 							</div>
+ 							<div class="paper-link">
+ 								<a href="http://dx.doi.org/10.2312/envirvis.20151090" target="_blank">
+ 									<img src="images/ieee.png" alt="Paper at publisher" class="paper-link-img">
+ 								</a>
+ 							</div>
+ 						</div>
+ 						<br style="clear:left;">
+ 					</div>
+					<div class="paper">
+						<div class="paper-image">
+							<a href="https://vimeo.com/86024016" class="lightbox" target="_blank"><img src="images/tvcg_movie.jpg" alt="Ovis System Overview" class="paper-img"></a>
+						</div>
+						<h2>Ovis: A Framework for Visual Analysis of Ocean Forecast Ensembles.</h2>
+						<h3>T. Höllt, A. Magdy, P. Zhan, G. Chen, G. Gopalakrishnan, I. Hoteit, C.D. Hansen, and M. Hadwiger.<br>
+							IEEE Transactions on Visualization and Computer Graphics 2014.</h3>
+						<div class="section" class="abstract">
+							<p><b>Abstract:</b>
+              We present a novel integrated visualization system that enables interactive visual
+              analysis of ensemble simulations of the sea surface height that is used in ocean forecasting.
+              The position of eddies can be derived directly from the sea surface height and our visualization
+              approach enables their interactive exploration and analysis. 
+              The behavior of eddies is important in different application settings of which we present two in this paper...</p>
+						</div>
+						<div class="paper-links">
+							<div class="paper-link">
+								<a href="https://www.thomashollt.com/assets/papers/2014_tvcg/2014_tvcg.pdf" target="_blank">
+									<img src="images/pdf.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="slides/OVis/index.html" target="_blank">
+									<img src="images/slides.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="https://dx.doi.org/10.1109/TVCG.2014.2307892" target="_blank">
+									<img src="images/ieee.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+						</div>
+						<br style="clear:left;">
+					</div>
+					<div class="paper">
+						<div class="paper-image">
+							<a href="https://vimeo.com/55175928" class="lightbox" target="_blank"><img src="images/pvis_movie.jpg" alt="Ovis System Overview" class="paper-img"></a>
+						</div>
+						<h2>Visual Analysis of Uncertainties in Ocean Forecasts for Planning and Operation of Off-Shore Structures.</h2>
+						<h3>T. Höllt, A. Magdy, G. Chen, G. Gopalakrishnan, I. Hoteit, C.D. Hansen, and M. Hadwiger.<br>
+							Proceedings of IEEE Pacific Visualization Symposium 2013.</h3>
+						<div class="section" class="abstract">
+							<p><b>Abstract:</b>
+							We present a novel integrated visualization system that enables interactive visual analysis of ensemble simulations
+							used in ocean forecasting, i.e, simulations of sea surface elevation. Our system enables the interactive planning
+							of both the placement and operation of off-shore structures. We illustrate this using a real-world simulation of the Gulf of Mexico...</br>
+							<b>Honorable mention for best paper award.</b></p>
+						</div>
+						<div class="paper-links">
+							<div class="paper-link">
+								<a href="https://www.thomashollt.com/assets/papers/2013_pacificvis/2013_pacificvis.pdf" target="_blank">
+									<img src="images/pdf.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="https://www.thomashollt.com/assets/papers/2013_pacificvis/2013_pacificvis_slides.pdf" target="_blank">
+									<img src="images/slides.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="https://dx.doi.org/10.1109/PacificVis.2013.6596144" target="_blank">
+									<img src="images/ieee.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+						</div>
+						<br style="clear:left;">
+					</div>
+					<div class="paper">
+						<div class="paper-image">
+							<a href="https://vimeo.com/58976344" class="lightbox" target="_blank"><img src="images/eg_movie.jpg" alt="Ovis in Apart From Oceans" class="paper-img"></a>
+						</div>
+						<h2>Extraction and Visual Analysis of Seismic Horizon Ensembles.</h2>
+						<h3>T. Höllt, G. Chen, C.D. Hansen, and M. Hadwiger.<br>
+							Eurographics (short papers) 2013.</h3>
+						<div class="section" class="abstract">
+							<p><b>Abstract:</b>
+							In this paper we show the techniques used to build Ovis applied in another application area, namely seismic interpretation.
+							Seismic interpretation is an important step in building subsurface models, which are needed to efficiently exploit fossil fuel reservoirs.
+							However, seismic features are seldom unambiguous, resulting in a high degree of uncertainty in the extracted model.
+							We present a novel system for the extraction, analysis and visualization of ensemble data of seismic horizons...
+							</p>
+						</div>
+						<div class="paper-links">
+							<div class="paper-link">
+								<a href="https://www.thomashollt.com/assets/papers/2013_eurographics/2013_eurographics.pdf" target="_blank">
+									<img src="images/pdf.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="https://www.thomashollt.com/assets/papers/2013_eurographics/2013_eurographics_slides.pdf" target="_blank">
+									<img src="images/slides.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="https://dx.doi.org/10.2312/conf/EG2013/short/069-072" target="_blank">
+									<img src="images/ieee.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+						</div>
+						<br style="clear:left;">
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+		
+			<div class="get" id="get">
+				<div class="content-wrapper">
+					<h1>Get Ovis.</h1>
+					<p align="center"><a href="http://github.com/thoellt/Ovis" target="_blank">Ovis is open source and available on GitHub.</a></p>
+					<div class="badge-container">
+						<a href="http://github.com/thoellt/Ovis" target="_blank"><img src="images/gh.png" alt="Fork on the Github" class="badge"></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer" id="footer">
+			<div class="footer-wrapper">
+				<p>Ovis is developed and maintained by <a href="http://www.thomashollt.com" target="_blank">Thomas Höllt</a>.</p>
+				<p>Ovis is a result of my PhD thesis and was developed partly during my time as a PhD student and later as a PostDoc at the
+          <a href="http://vccvisualization.org" target="_blank">High-Performance Visualization Group</a>,
+          part of the <a href="https://vcc.kaust.edu.sa" target="_blank">Visual Computing Center</a>
+          and the <a href="https://assimilation.kaust.edu.sa/" target="_blank">Red Sea Modeling and Prediction Group</a>
+          at the <a href="https://www.kaust.edu.sa" target="_blank">King Abdullah University of Science and Technology</a>.
+        </p>
+				<span class="symbol" id="websymbol"><a href="http://www.thomashollt.com" target="_blank">&#xe201;</a></span>
+				<span class="symbol" id="mailsymbol"><a href="mailto:hello@thomashollt.com?subject=Ovis" target="_blank">&#xe224;</a></span>
+				<span class="symbol" id="rgsymbol"><a href="http://www.researchgate.com/profile/Thomas_Hoellt" target="_blank">&#xe23B;</a></span>
+				<span class="symbol" id="googlesymbol"><a href="http://scholar.google.com/citations?user=8e1UWTMAAAAJ" target="_blank">&#xe23A;</a></span>
+				<!--span class="symbol" id="ghsymbol"><a href="http://www.github.com/thoellt" target="_blank">&#xe237;</a></span-->
+				<span class="symbol" id="vimeosymbol"><a href="http://www.vimeo.com/user12726008" target="_blank">&#xe289;</a></span>
+			</div>
+		</div>
+
+	</body>
+</html>
